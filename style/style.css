@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,11 +10,15 @@
     src: url('../assets/fonts/Jacques_Francois/JacquesFrancois-Regular.ttf');
 }
 
-body{
+html{
+    width: 100vw;
+}
+
+body {
     background-color: #3B3B3B;
 }
 
-div#menu{
+div#menu {
     width: 100vw;
     height: 65px;
     background: white;
@@ -24,48 +28,55 @@ div#menu{
     justify-content: flex-end;
 }
 
-div#menu img{
+div#menu img {
     width: 48px;
     height: 43px;
 }
 
-div p{
+div p {
     position: absolute;
     left: 12px;
     font-size: 31px;
+
+}
+
+#publication img {
+    width: 100vw;
+    height: 32vh;
+    z-index: -1;
+}
+
+div#publication {
+    display: flex;
+    flex-direction: column;
+    height: 32vh;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
     
 }
 
-img{
-    width: 100vw;
-    height: 32vh;
-}
-
-div#publication{
-    display: flex;
-    flex-direction: column;
-}
-
-div#publication #post{
+div#publication #post {
     width: 100vw;
     height: 6vh;
     background: #00000080;
-    position: relative;
-    bottom: 78px;
+    position: absolute;
     align-content: center;
     text-align: center;
     font-size: 38px;
     color: white;
+
 }
 
-article{
+article {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
-article img{
+article img {
     width: 250px;
     height: 347px;
     border-radius: 6px;
     box-shadow: 0px 0px 6px 1px black;
+    position: relative;
+    top: 20px;
 }
