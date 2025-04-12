@@ -41,12 +41,17 @@ img{
     height: 32vh;
 }
 
+div#publication{
+    display: flex;
+    flex-direction: column;
+}
+
 div#publication #post{
     width: 100vw;
     height: 6vh;
     background: #00000080;
     position: relative;
-    bottom: 60px;
+    bottom: 78px;
     align-content: center;
     text-align: center;
     font-size: 38px;
